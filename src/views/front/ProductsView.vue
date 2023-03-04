@@ -1,10 +1,11 @@
 <template>
   <div>產品列表</div>
-  <table class="table">
+  <hr>
+  <table class="table align-middle">
     <tbody>
-      <tr v-for="product in products" :key="product.id">
+      <tr class="" v-for="product in products" :key="product.id">
         <td>{{ product.title }}</td>
-        <td><img :src="product.imageUrl" width="200" alt="" /></td>
+        <td><img  class="img-fluid" :src="product.imageUrl" width="200" alt="" /></td>
         <td>
           <router-link
             :to="`product/${product.id}`"

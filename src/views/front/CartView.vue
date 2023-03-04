@@ -22,7 +22,7 @@
     </thead>
     <tbody>
       <template v-if="cart.carts">
-        <tr v-for="item in cart.carts" :key="item.id">
+        <tr  v-for="item in cart.carts" :key="item.id">
           <td>
             <button
               type="button"
